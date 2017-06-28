@@ -1,0 +1,18 @@
+name: Matthew Sullivan
+description: "Matthew Sullivan's blog about programming and data"
+url: http://msull92.com
+highlighter: rouge
+permalink: /posts/:title/
+markdown: kramdown
+
+theme_options:
+  google_analytics: UA-34294450-1
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+gems:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-sitemap

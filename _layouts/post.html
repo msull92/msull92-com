@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class='post'>
+  {% if page.title_image %}
+    <img src="{{ site.url }}{{page.title_image}}" alt="{{ page.title }}" class="title-image">
+  {% else %}
+    <h2 class='title'>{{ page.title }}</h2>
+  {% endif %}
+  <p class='meta'>{{ page.date | date: "%B %-d, %Y" }}</p>
+
+  <div class='content'>
+  {{ content }}
+  </div>
+
+  <div id='post-footer'>
+    {% include bio.html %}
+  </div>
+</div>

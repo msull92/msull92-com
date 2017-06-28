@@ -1,0 +1,306 @@
+
+// $main-font-stack: 'Open Sans', Arial, sans-serif;
+$main-font-stack: 'Source Serif Pro', Georgia, Times, "Times New Roman", serif;
+$secondary-font-stack: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+* { margin: 0; padding: 0; }
+html, body { height: 100%; }
+
+body {
+  color: #4B515D;
+  font-family: $main-font-stack;
+  font-size: 16px;
+  hyphens: auto;
+  text-align: justify;
+  text-rendering: optimizeLegibility;
+
+	-webkit-font-feature-settings: "kern", "liga";
+	-moz-font-feature-settings: "kern", "liga";
+	font-feature-settings: "kern", "liga";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font-stack;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+img.title-image {
+  box-sizing: border-box;
+  padding: 20px 0;
+  width: 75%;
+}
+
+a { color: #69C2CC; text-decoration: none; }
+a:hover {
+  color: #75BFF0;
+  text-decoration: none;
+}
+
+.align-right { float: right; }
+.text-lg { font-size: 1.1em; }
+.text-sm { font-size: 0.9em; }
+
+.clearfix {
+  &:before, &:after { content: ' '; display: table; }
+  &:after { clear: both; }
+  *zoom: 1;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.container > .header {
+  padding: 20px 50px;
+}
+
+.container > .header h1.title {
+  display: inline-block;
+  font-size: 1em;
+}
+
+.container > .header h1.title a { color: #6F7783; text-decoration: none; }
+.container > .header h1.title a:hover { color: #282C33; }
+.container > .header .links { padding: 0 0 0 20px; }
+
+.container > .header .links a {
+  color: #69C2CC;
+  font-family: $secondary-font-stack;
+  font-size: 0.9em;
+  padding: 0 10px;
+}
+
+.container > .header .links a:hover {
+  color: #75BFF0;
+  text-decoration: none;
+}
+
+.site { mrgin: 0 auto; padding: 20px 50px; }
+
+.site .posts .month { color: #6F7783; padding: 30px 0; }
+
+.site .posts .post-listing {
+  font-family: $secondary-font-stack;
+  font-weight: 500;
+  line-height: 1.5em;
+  padding: 25px 0;
+}
+.site .posts .post-listing .title { font-size: 1.4em; }
+.site .posts .published-on {
+  color: #6F7783;
+  font-weight: normal;
+  font-size: 0.75em;
+  padding: 0 20px 0 0;
+}
+
+.site .posts a { color: #6F7783; }
+.site .posts a:hover { color: #4B515D; text-decoration: none; }
+.site .posts .category {
+  color: #6F7783;
+  font-size: 0.75em;
+  font-weight: normal;
+  padding: 0 10px 0 5px;
+}
+
+.site .post h2.title {
+  font-size: 2em;
+  line-height: 1.5em;
+  padding: 20px 0 20px 0;
+}
+.site .post .meta {
+  color: #6F7783;
+  font-family: $secondary-font-stack;
+  font-size: 0.9em;
+}
+
+.site .post .content    {
+  font-family: $main-font-stack;
+  line-height: 1.5;
+  margin: 0 0 60px 0;
+}
+.site .post .content img {
+  box-sizing: border-box;
+  padding: 10px;
+}
+.site .post .content p  { margin: 20px 0; }
+.site .post .content h1 { margin: 20px 0 0 0; }
+.site .post .content ul,
+.site .post .content ol { margin: 20px 30px; }
+
+.site .post .content ul ul { margin: 5px 0 10px 20px; }
+
+.site .post .content h1 { font-size: 1.5em; margin: 1.5em 0 0.5em 0; }
+.site .post .content h2 { font-size: 1.3em; margin: 1.3em 0 0.3em 0; }
+.site .post .content h3 { font-size: 1.4em; margin: 1.4em 0 0.4em 0; }
+.site .post .content h4 { font-size: 1.3em; margin: 1.3em 0 0.3em 0; }
+.site .post .content h5 { font-size: 1.2em; margin: 1.2em 0 0.2em 0; }
+.site .post .content h6 { font-size: 1.1em; margin: 1.1em 0 0.1em 0; }
+
+.site .post .content code {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-family: "Hack";
+  font-size: 13px;
+  padding: 0 4px;
+}
+
+.site .post .content pre code { background: none; border: none; padding: 0; }
+
+.site .post .content blockquote {
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: $main-font-stack;
+  font-size: 1.05em;
+  line-height: 1.5em;
+  margin: 40px 0;
+  padding: 0 40px;
+}
+
+.site .post .content .highlighter-rouge {
+  font-size: 13px;
+  line-height: 1.5em;
+  margin: 20px 0;
+
+  pre {
+    background-color: #282C33;
+    color: #B9C0CA;
+    border-radius: 3px;
+    font-family: "Hack";
+    overflow-x: scroll;
+    padding: 10px;
+  }
+}
+
+#author-bio {
+  border-top: 3px solid #eee;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding: 60px 0px;
+  position: relative;
+  text-align: center;
+
+  .gravatar {
+    margin: -42px 0 0 -42px;
+    position: absolute; top: 0; left: 50%;
+  }
+
+  .gravatar img {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    height: 80px;
+    padding: 4px;
+    width: 80px;
+  }
+  .bio a { color: #69C2CC; }
+  .bio a:hover {
+    color: #75BFF0;
+    text-decoration: none;
+  }
+  .links { text-align: center; }
+  .links a {
+    font-family: $secondary-font-stack;
+    padding: 0 10px;
+  }
+}
+
+.subscribe {
+  background: #f9f9fa;
+  color: #888;
+  padding: 30px 20px;
+}
+
+.subscribe-form {
+  clear: both;
+  padding: 20px 0;
+
+  input { font-size: 13px; }
+}
+
+.subscribe-email {
+  padding: 8px;
+  width: 50%;
+
+  &:focus { outline: 0; }
+}
+
+.subscribe-submit {
+  background: #eee;
+  border: 1px solid #bbb;
+  color: #777;
+  height: 36px;
+  width: 25%;
+
+  &:hover { background: #ddd; }
+}
+
+#prev-next-nav {
+  overflow: hidden;
+  padding: 15px 0;
+  width: 100%;
+}
+
+#prev-next-nav div {
+  display: inline-block;
+  font-size: 0.8em;
+  float: left;
+  margin: 25px 0 0 0;
+}
+#prev-next-nav .next {
+  float: right;
+  padding: 0 0 0 5px;
+  text-align: right;
+}
+
+#related-posts { margin: 20px 0 30px 0; }
+#related-posts h3 { font-size: 0.8em; padding: 20px 0; }
+#related-posts ul {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  padding: 0 30px;
+}
+
+.container > .footer {
+  color: #6F7783;
+  font-family: "Fira Sans";
+  font-size: 0.75em;
+  padding: 10px 0 40px 0;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.social-share { margin: 40px 0; }
+
+@media screen and (max-width: 960px) {
+  .container { width: 99%; }
+}
+
+@media screen and (max-width: 500px) {
+  body { font-size: 16px; }
+  .container > .header { padding: 20px; }
+  .site { padding: 20px; }
+  .site .post h2.title { font-size: 1.5em; }
+  .sm-hide { display: none; }
+
+  img.title-image {
+    width: 100%;
+  }
+}

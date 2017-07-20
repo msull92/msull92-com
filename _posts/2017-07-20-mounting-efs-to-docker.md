@@ -12,12 +12,12 @@ These types of legacy projects often depend on living in a specific folder struc
 In a perfect world, these applications would be rewritten and brought up to new standards.
 Depending on time, money, and other constraints this often isn't possible and you need to make the best of what you've got.
 
-An approach that I've recently worked with is to take these kinds of projects and use Docker to encapsulate their code.
+An approach that I've recently worked with is to take these kinds of projects and use [Docker](https://docs.docker.com/) to encapsulate their code.
 This allows us to easily maintain whatever specific environment the finicky code needs to run and do it in a very reproducible way.
 Making sure that we maintain environment makes sure that we don't add new technical debt by moving it into a completely new environment with minor differences that later arise into negative impacts.
 Making use of this encapsulation we also give ourselves an easier path to migration in the future so that things will be better documented and more portable.
 
-The second half of this approach is to mount AWS EFS to our container so that we don't break our applications' existing workflow...**as much as we'd love to rewrite it**.
+The second half of this approach is to mount [AWS EFS](https://aws.amazon.com/documentation/efs/) to our container so that we don't break our applications' existing workflow...**as much as we'd love to rewrite it**.
 By mounting this as a volume into our Docker container we can still allow the application to communicate in the way it knows how, but now with the benefit of being in a separate storage system that has, according to AWS, "unlimited" file space and each application can be scaled, killed, or started at will without data loss.
 
 ## Create the File System

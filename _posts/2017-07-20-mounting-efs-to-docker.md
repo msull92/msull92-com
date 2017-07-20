@@ -2,7 +2,7 @@
 layout: post
 title: Mounting EFS to Docker
 date: 2017-07-20
-categories: infrastructure, aws, docker
+categories: infrastructure aws docker
 ---
 
 Normally I'd recommend storing files and binary data for a web application in an external storage service like [AWS S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) and following a [twelve-factor approach](https://12factor.net/) to development.

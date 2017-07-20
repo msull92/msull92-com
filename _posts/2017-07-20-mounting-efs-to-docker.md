@@ -31,7 +31,7 @@ Finally, make sure that you have a mount target for each subnet that you'll need
 
 ## Mount the EFS to the Host
 Depending on how you're hosting your Docker applications this step can vary wildly.
-For my current use case, however, we are not putting these containerized applications onto a container platform–*yet*–like Kubernetes or AWS ECS.
+For my current use case, however, we are not putting these containerized applications onto a container platform–*yet*–like [Kubernetes](https://kubernetes.io/) or [AWS ECS](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html).
 Instead, we are just running the container directly on top of an EC2 instance.
 
 For this use case, the mounting of the EFS is pretty straightforward.

@@ -5,7 +5,7 @@ date: 2017-07-20
 categories: infrastructure aws docker
 ---
 
-Normally I'd recommend storing files and binary data for a web application in an external storage service like [AWS S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) and following a [twelve-factor approach](https://12factor.net/) to development.
+Normally, I'd recommend storing files and binary data for a web application in an external storage service like [AWS S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) and following a [twelve-factor approach](https://12factor.net/) to development.
 This provides a clean separation of concerns between your code and stateful storage of data, allowing you to kill servers/containers at will and not worry about data loss.
 However, sometimes you need to migrate legacy code that does not follow this standard.
 These types of legacy projects often depend on living in a specific folder structure and reaching into the directory of another application directly to manipulate its data.

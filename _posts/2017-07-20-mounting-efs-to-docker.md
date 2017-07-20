@@ -24,7 +24,7 @@ By mounting this as a volume into our Docker container we can still allow the ap
 The first step of this process is to create your EFS on AWS.
 This is a pretty straightforward process that is well documented by AWS [here](http://docs.aws.amazon.com/efs/latest/ug/wt1-getting-started.html).
 I won't get into the step-by-step process of it here because I don't want to spend my time rewriting AWS' documentation but I do want to cover some important configuration factors for this specific use case.
-As said, we may have many scripts, apps, and services that will be accessing the EFS simultaneously I'd advise looking into using the `Max IO` option.
+As said, we may have many scripts, apps, and services that will be accessing the EFS simultaneously; I'd advise looking into using the `Max IO` option.
 This should be set if you plan to have more than tens of applications accessing the same EFS.
 Also, you'll want to make sure that you create the file system in the same VPC and region where you plan to use it.
 Finally, make sure that you have a mount target for each subnet that you'll need access from with a security group that allows access to the proper applications.

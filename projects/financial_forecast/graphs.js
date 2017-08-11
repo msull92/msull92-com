@@ -1,27 +1,44 @@
-var svg, data, x, y, xAxis, yAxis, dim, chartWrapper, line, path, margin = {}, width, height;
+var svg, last_6mo_data, next_6mo_data, x, y, xAxis, yAxis, dim, chartWrapper, line, line2, last_6mo_path, next_6mo_path, margin = {}, width, height;
 
-d3.csv('data.csv', init); //load data, then initialize chart
+// Parse the date / time
+var	parseDate = d3.time.format("%m/%d/%y").parse;
 
-//called once the data is loaded
-function init(csv) {
-  data = csv;
-  // Parse the date / time
-  var	parseDate = d3.time.format("%m/%d/%y").parse;
+d3.csv('last_6mo.csv', function(data) {
+  last_6mo_data = data;
 
-  data.forEach(function(d) {
-		d.Date = parseDate(d.Date);
-		d.Balance = d.Balance.replace(/,/g, '').replace(/\$/g, '');
+  last_6mo_data.forEach(function(d) {
+    d.Date = parseDate(d.Date);
+    d.Balance = d.Balance.replace(/,/g, '').replace(/\$/g, '');
     if(d.Balance.includes("(")) {
       d.Balance = parseFloat(d.Balance.replace(/\(/g, '').replace(/\)/g, '')) * -1.0;
     } else {
       d.Balance = parseFloat(d.Balance);
     }
-	});
+  });
 
+  d3.csv('next_6mo.csv', function(data) {
+    next_6mo_data = data;
+
+    next_6mo_data.forEach(function(d) {
+      d.Date = parseDate(d.Date);
+      d.Balance = d.Balance.replace(/,/g, '').replace(/\$/g, '');
+      if(d.Balance.includes("(")) {
+        d.Balance = parseFloat(d.Balance.replace(/\(/g, '').replace(/\)/g, '')) * -1.0;
+      } else {
+        d.Balance = parseFloat(d.Balance);
+      }
+    });
+
+    init();
+  });
+});
+
+//called once the data is parsed
+function init() {
   //initialize scales
-  xExtent = d3.extent(data, function(d,i) { return new Date(d.Date) });
+  xExtent = d3.extent(last_6mo_data.concat(next_6mo_data), function(d,i) { return d.Date });
   x = d3.time.scale().domain(xExtent);
-  y = d3.scale.linear().domain([d3.min(data, function(d) { return d.Balance; }) - 15000, d3.max(data, function(d) { return d.Balance; }) + 15000]);
+  y = d3.scale.linear().domain([d3.min(last_6mo_data, function(d) { return d.Balance; }) - 10000, d3.max(next_6mo_data, function(d) { return d.Balance; }) + 10000]);
 
   //the path generator for the line chart
   line = d3.svg.line()
@@ -31,7 +48,8 @@ function init(csv) {
   //initialize svg
   svg = d3.select('#graphs').append('svg');
   chartWrapper = svg.append('g');
-  path = chartWrapper.append('path').datum(data).classed('path', true);
+  last_6mo_path = chartWrapper.append('path').datum(last_6mo_data).classed('path last_6mo', true);
+  next_6mo_path = chartWrapper.append('path').datum(next_6mo_data).classed('path next_6mo', true);
   chartWrapper.append('g').classed('x axis', true);
   chartWrapper.append('g').classed('y axis', true);
 
@@ -74,7 +92,8 @@ function render() {
   svg.select('.y.axis')
     .call(yAxis);
 
-  path.attr('d', line);
+  last_6mo_path.attr('d', line);
+  next_6mo_path.attr('d', line);
 }
 
 window.addEventListener('resize', render);

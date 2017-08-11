@@ -7,8 +7,8 @@ This is an analytical representation of my finances.
 I have gotten a new bug to work on becoming debt-free, so this will chronicle that journey through different visualizations.
 I'll do my best to keep this updated with new data.
 
-#### 2017 Forecast
-This graph shows the year of 2017 with past and forecasted total account values.
+#### 1-Year Rolling Net Worth
+This graph shows past and forecasted net worth.
 
 <div id="graphs"></div>
 

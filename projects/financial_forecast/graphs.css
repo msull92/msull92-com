@@ -4,21 +4,25 @@
 }
 
 .graph .axis {
-    fill: #6F7783;
-    font-size: 11px;
+  fill: #6F7783;
+  font-size: 11px;
 }
 .graph .axis line,
 .graph .axis path {
-    stroke-width: hairline;
-    fill: none;
-    stroke: #6F7783;
-    shape-rendering: crispEdges
+  stroke-width: hairline;
+  fill: none;
+  stroke: #6F7783;
+  shape-rendering: crispEdges
 }
 .graph path.path {
-    stroke: #4B515D;
-    stroke-width: 2px;
-    stroke-opacity: 1;
-    fill: none
+  stroke: #e05252;
+  stroke-width: 2px;
+  stroke-opacity: 1;
+  fill: none
+}
+
+.graph path.path.next_6mo {
+  stroke-opacity: 0.25;
 }
 
 g.axis.y path.domain {

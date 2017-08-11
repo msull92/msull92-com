@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Financial Forecast"
+title: "Financial Map"
 ---
 
 This is an analytical representation of my finances.

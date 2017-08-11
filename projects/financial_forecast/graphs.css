@@ -1,0 +1,34 @@
+#graphs {
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.graph .axis {
+    fill: #6F7783;
+    font-size: 11px;
+}
+.graph .axis line,
+.graph .axis path {
+    stroke-width: hairline;
+    fill: none;
+    stroke: #6F7783;
+    shape-rendering: crispEdges
+}
+.graph path.path {
+    stroke: #4B515D;
+    stroke-width: 2px;
+    stroke-opacity: 1;
+    fill: none
+}
+
+g.axis.y path.domain {
+  display: none;
+}
+
+g.axis path.domain {
+  opacity: 0.2;
+}
+
+g.axis line {
+  opacity: 0.2;
+}

@@ -5,7 +5,7 @@ date: 2017-08-14
 categories: infrastructure ansible bash
 ---
 
-I have a series of bash aliases for Ansible that make my life better, so I thought I'd share them.
+I have a series of bash aliases for [Ansible](http://docs.ansible.com/ansible/latest/index.html) that make my life better, so I thought I'd share them.
 If you choose to use any of these just make sure to add them to your `~/.bash_profile`, assuming you're on a Mac.
 Then after editing this file make sure to run `source ~/.bash_profile` so that you can use them immediately.
 

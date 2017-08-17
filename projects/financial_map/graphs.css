@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+svg {
+  overflow: visible;
+}
+
 .graph .axis {
   fill: #6F7783;
   font-size: 11px;
@@ -12,17 +16,21 @@
   stroke-width: hairline;
   fill: none;
   stroke: #6F7783;
-  shape-rendering: crispEdges
+  shape-rendering: crispEdges;
 }
 .graph path.path {
   stroke: #e05252;
   stroke-width: 2px;
   stroke-opacity: 1;
-  fill: none
+  fill: none;
 }
 
-.graph path.path.next_6mo {
+.graph path.path.first_6mo {
   stroke-opacity: 0.25;
+}
+
+.graph path.path.second_6mo {
+  stroke-opacity: 0.50;
 }
 
 g.axis.y path.domain {
@@ -35,4 +43,19 @@ g.axis path.domain {
 
 g.axis line {
   opacity: 0.2;
+}
+
+text.hover-text {
+  fill: #e05252;
+  font-weight: bold;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: #e05252;
+  stroke: #e05252;
 }

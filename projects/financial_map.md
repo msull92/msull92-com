@@ -18,4 +18,5 @@ This graph shows past and forecasted net worth.
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3-queue.v3.min.js"></script>
 <script src="graphs.js"></script>

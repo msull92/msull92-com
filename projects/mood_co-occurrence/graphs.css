@@ -1,0 +1,74 @@
+#co-occurrence {
+  font-size: 0;
+}
+
+ul#legend {
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  margin-right: 5%;
+  min-width: 15%;
+  text-align: left;
+  vertical-align: middle;
+}
+
+strong,
+select {
+  display: block;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+li.positive span,
+li.neutral span,
+li.negative span {
+  display: inline-block;
+  height: 10px;
+  margin-right: 5px;
+  width: 10px;
+}
+
+li.positive span {
+  background-color: #98c379;
+}
+
+li.neutral span {
+  background-color: #e5c07b;
+}
+
+li.negative span {
+  background-color: #e05252;
+}
+
+#graphs {
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  width: 80%;
+  vertical-align: middle;
+}
+
+svg {
+  display: block;
+  font-size: 10px;
+  overflow: visible;
+}
+
+.background {
+  fill: #abb2bf;
+  opacity: 0.25;
+}
+
+line {
+  stroke: #ffffff;
+}
+
+text.active {
+  font-weight: bold;
+}

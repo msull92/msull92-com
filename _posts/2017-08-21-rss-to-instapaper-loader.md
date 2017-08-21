@@ -2,7 +2,7 @@
 layout: post
 title: RSS to Instapaper Loader
 date: 2017-08-21
-categories: ruby
+categories: ruby docker
 description: Here's a scheduled script that will watch all of your RSS feeds and push them into Instapaper.
 ---
 

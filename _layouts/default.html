@@ -4,7 +4,14 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="author" content="Matthew Sullivan">
-    <meta name="description" content="{{ site.description }}">
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+      <meta name="twitter:description" content="{{ page.description }}">
+    {% else %}
+      <meta name="description" content="{{ site.description }}">
+      <meta name="twitter:description" content="{{ site.description }}">
+    {% endif %}
+
     {% if page.share_image %}
       <meta property="og:image" content="{{ site.url }}{{page.share_image}}" />
       <meta name="twitter:image" content="{{ site.url }}{{page.share_image}}">
@@ -17,7 +24,6 @@
     <meta name="twitter:site" content="@msull92_fargo">
     <meta name="twitter:creator" content="@msull92_fargo">
     <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ site.description }}">
 
     <title>{{ page.title }}</title>
 

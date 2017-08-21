@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Financial Map"
+description: This is an analytical representation of my finances.
 ---
 
 This is an analytical representation of my finances.

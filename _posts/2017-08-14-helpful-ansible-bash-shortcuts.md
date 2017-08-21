@@ -3,6 +3,7 @@ layout: post
 title: Helpful Ansible Bash Shortcuts
 date: 2017-08-14
 categories: infrastructure ansible bash
+description: A collection of helpful bash shortcuts for Ansible that I use on a daily basis.
 ---
 
 I have a series of bash aliases for [Ansible](http://docs.ansible.com/ansible/latest/index.html) that make my life better, so I thought I'd share them.

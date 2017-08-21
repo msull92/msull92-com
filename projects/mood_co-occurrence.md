@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Mood Co-occurrence"
+description: This is an analytical representation of my mood over time, updated on a daily basis.
 ---
 
 This is an analytical representation of my mood over time, updated on a daily basis.

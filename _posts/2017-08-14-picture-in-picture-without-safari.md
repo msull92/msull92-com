@@ -3,6 +3,7 @@ layout: post
 title: Picture in Picture on your Mac without Safari
 date: 2017-08-14
 categories: hack bash
+description: How to use Picture in Picture on your Mac with Youtube, without needing Safari.
 ---
 
 I really love the [Picture in Picture](https://support.apple.com/en-us/HT206997) feature that Apple offers on Macs.

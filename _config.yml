@@ -7,6 +7,7 @@ markdown: kramdown
 
 theme_options:
   google_analytics: UA-34294450-1
+  disqus_shortname: msull92
 
 sass:
   sass_dir: _sass

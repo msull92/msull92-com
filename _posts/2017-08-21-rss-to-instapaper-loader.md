@@ -32,4 +32,4 @@ Finally, to make sure that it isn't loading the same url into your Instapaper ac
 **Note:** The easiest way to launch this tool is to use the `Dockerfile` and `docker-compose.yml` files that are included in the repository.
 I host these on a server that I have on DigitalOcean. It's not necessary to mount the `urls.log` file to the container, but it is recommended so that state is maintained between containers so in case you need to reboot, redeploy, etc. then your Instapaper account won't be flooded with old articles.
 
-*If you have any changes that would be helpful for others, please feel free to fork and make a PR so we all get the goodness!*
+*If you have any changes that would be helpful for others, please feel free to fork the repository and make a pull-request so we all get the goodness!*

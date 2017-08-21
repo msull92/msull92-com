@@ -7,7 +7,8 @@ description: This is an analytical representation of my mood over time, updated 
 This is an analytical representation of my mood over time, updated on a daily basis.
 I created a [service](https://github.com/msull92/mood-mailer) that emails me throughout the work day to ask how I'm feeling.
 I respond with a one word answer and it records that in a [csv](http://apps.msull92.com/data/mood-mailer/responses.csv).
-Every hour, another [script](https://github.com/msull92/mood-matrix-generator) runs against that data and spits out a [co-occurrence map](http://apps.msull92.com/data/mood-matrix-generator/co-occurrence-map.json) that groups words using [natural language processing](https://cloud.google.com/natural-language/).
+Every hour, another [script](https://github.com/msull92/mood-matrix-generator) runs against that data and spits out a [co-occurrence map](http://apps.msull92.com/data/mood-matrix-generator/co-occurrence-map.json) that groups words together using [natural language processing](https://cloud.google.com/natural-language/).
+Co-occurrence is determined by which words are responded with one the same day.
 
 I was inspired by a [co-occurrence graph](https://bost.ocks.org/mike/miserables/) that Mike Bostock for Les Misérables. Most of the code for the graph came directly from this source, with tweaks for my use.
 

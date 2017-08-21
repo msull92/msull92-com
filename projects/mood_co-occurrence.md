@@ -10,7 +10,7 @@ I respond with a one word answer and it records that in a [csv](http://apps.msul
 Every hour, another [script](https://github.com/msull92/mood-matrix-generator) runs against that data and spits out a [co-occurrence map](http://apps.msull92.com/data/mood-matrix-generator/co-occurrence-map.json) that groups words together using [natural language processing](https://cloud.google.com/natural-language/).
 Co-occurrence is determined by which words are responded with one the same day.
 
-I was inspired by a [co-occurrence graph](https://bost.ocks.org/mike/miserables/) that Mike Bostock for Les Misérables. Most of the code for the graph came directly from this source, with tweaks for my use.
+I was inspired by a [co-occurrence graph](https://bost.ocks.org/mike/miserables/) that Mike Bostock made for Les Misérables. Most of the code for the graph came directly from this source, with tweaks for my use.
 
 <div id="co-occurrence">
   <ul id="legend">

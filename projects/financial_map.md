@@ -11,6 +11,14 @@ I'll do my best to keep this updated with new data.
 #### 1-Year Rolling Net Worth
 This graph shows past and forecasted net worth.
 
+<ul id="legend">
+  <strong>Legend</strong>
+  <li class="actual"><span> </span> actual value</li>
+  <li class="current"><span> </span> current forecast</li>
+  <li class="previous"><span> </span> previous forecast</li>
+  <li class="past"><span> </span> past forecast</li>
+</ul>
+
 <div id="graphs"></div>
 
 <link rel="stylesheet" type="text/css" href="graphs.css">

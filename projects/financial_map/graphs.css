@@ -1,6 +1,71 @@
 #graphs {
+  box-sizing: border-box;
+  display: inline-block;
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
+  vertical-align: middle;
+  width: 80%;
+}
+
+ul#legend {
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  margin-right: 4%;
+  min-width: 15%;
+  text-align: left;
+  vertical-align: middle;
+}
+
+svg {
+  margin-right: -50px;
+}
+
+@media screen and (max-width: 960px) {
+  ul#legend {
+    display: block;
+    min-width: 100%;
+  }
+
+  #graphs {
+    display: block;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  svg {
+    margin-right: -25px;
+  }
+}
+
+li.actual span,
+li.current span,
+li.previous span,
+li.past span {
+  background-color: #e05252;
+  display: inline-block;
+  height: 10px;
+  margin-right: 5px;
+  width: 10px;
+}
+
+li.actual span {
+  opacity: 1.0;
+}
+
+li.current span {
+  opacity: 0.25;
+}
+
+li.previous span {
+  opacity: 0.10;
+}
+
+li.past span {
+  opacity: 0.05;
 }
 
 svg {
@@ -26,11 +91,15 @@ svg {
 }
 
 .graph path.path.first_6mo {
-  stroke-opacity: 0.25;
+  stroke-opacity: 0.05;
 }
 
 .graph path.path.second_6mo {
-  stroke-opacity: 0.50;
+  stroke-opacity: 0.10;
+}
+
+.graph path.path.third_6mo {
+  stroke-opacity: 0.25;
 }
 
 g.axis.y path.domain {

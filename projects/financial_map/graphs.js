@@ -1,13 +1,13 @@
-var svg, focus, last_6mo_data, first_6mo_data, second_6mo_data, x, y, xAxis, yAxis, dim, chartWrapper, line, last_6mo_path, first_6mo_path, second_6mo_path, margin = {}, width, height;
+var svg, focus, last_6mo_data, first_6mo_data, second_6mo_data, third_6mo_data, x, y, xAxis, yAxis, dim, chartWrapper, line, last_6mo_path, first_6mo_path, second_6mo_path, third_6mo_path, margin = {}, width, height;
 
-// Parse the date / time
+// Parse the date / timie
 var	parseDate = d3.time.format("%m/%d/%y").parse,
     bisectDate = d3.bisector(function(d) { return d.Date; }).left,
     formatValue = d3.format(".3s"),
     formatCurrency = function(d) { return  formatValue(d); };
 
 var q = d3.queue();
-["last_6mo.csv", "first_6mo.csv", "second_6mo.csv"].forEach(function(d) {
+["last_6mo.csv", "first_6mo.csv", "second_6mo.csv", "third_6mo.csv"].forEach(function(d) {
   //add your csv call to the queue
   q.defer(function(callback) {
     d3.csv(d, function(data) {
@@ -33,10 +33,11 @@ function init(err, results) {
   last_6mo_data = results[0];
   first_6mo_data = results[1];
   second_6mo_data = results[2];
+  third_6mo_data = results[3];
 
   //initialize scales
-  xExtent = d3.extent(last_6mo_data.concat(first_6mo_data).concat(second_6mo_data), function(d,i) { return d.Date });
-  yExtent = d3.extent(last_6mo_data.concat(first_6mo_data).concat(second_6mo_data), function(d,i) { return d.Balance });
+  xExtent = d3.extent(last_6mo_data.concat(first_6mo_data).concat(second_6mo_data).concat(third_6mo_data), function(d,i) { return d.Date });
+  yExtent = d3.extent(last_6mo_data.concat(first_6mo_data).concat(second_6mo_data).concat(third_6mo_data), function(d,i) { return d.Balance });
   x = d3.time.scale().domain(xExtent);
   y = d3.scale.linear().domain([yExtent[0] - 5000, yExtent[1] + 5000]);
 
@@ -51,6 +52,7 @@ function init(err, results) {
   last_6mo_path = chartWrapper.append('path').datum(last_6mo_data).classed('path last_6mo', true);
   first_6mo_path = chartWrapper.append('path').datum(first_6mo_data).classed('path first_6mo', true);
   second_6mo_path = chartWrapper.append('path').datum(second_6mo_data).classed('path second_6mo', true);
+  third_6mo_path = chartWrapper.append('path').datum(third_6mo_data).classed('path third_6mo', true);
   chartWrapper.append('g').classed('x axis', true);
   chartWrapper.append('g').classed('y axis', true);
 
@@ -121,10 +123,11 @@ function render() {
   last_6mo_path.attr('d', line);
   first_6mo_path.attr('d', line);
   second_6mo_path.attr('d', line);
+  third_6mo_path.attr('d', line);
 }
 
 function mousemove() {
-  data = last_6mo_data.concat(second_6mo_data);
+  data = last_6mo_data.concat(second_6mo_data).concat(third_6mo_data);
   var x0 = x.invert(d3.mouse(this)[0]),
       i = bisectDate(data, x0, 1),
       d0 = data[i - 1],

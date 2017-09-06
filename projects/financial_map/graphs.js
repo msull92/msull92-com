@@ -121,7 +121,7 @@ function render() {
 }
 
 function mousemove() {
-  data = last_6mo_data;
+  data = last_6mo_data.concat(first_6mo_data);
   var x0 = x.invert(d3.mouse(this)[0]),
       i = bisectDate(data, x0, 1),
       d0 = data[i - 1],

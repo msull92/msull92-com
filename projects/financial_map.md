@@ -15,8 +15,6 @@ This graph shows past and forecasted net worth.
   <strong>Legend</strong>
   <li class="actual"><span> </span> actual value</li>
   <li class="current"><span> </span> current forecast</li>
-  <li class="previous"><span> </span> previous forecast</li>
-  <li class="past"><span> </span> past forecast</li>
 </ul>
 
 <div id="graphs"></div>

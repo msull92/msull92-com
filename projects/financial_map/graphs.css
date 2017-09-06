@@ -60,14 +60,6 @@ li.current span {
   opacity: 0.25;
 }
 
-li.previous span {
-  opacity: 0.10;
-}
-
-li.past span {
-  opacity: 0.05;
-}
-
 svg {
   overflow: visible;
 }
@@ -91,14 +83,6 @@ svg {
 }
 
 .graph path.path.first_6mo {
-  stroke-opacity: 0.05;
-}
-
-.graph path.path.second_6mo {
-  stroke-opacity: 0.10;
-}
-
-.graph path.path.third_6mo {
   stroke-opacity: 0.25;
 }
 

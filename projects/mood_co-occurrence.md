@@ -12,6 +12,8 @@ Co-occurrence is determined by which words are responded with one the same day.
 
 I was inspired by a [co-occurrence graph](https://bost.ocks.org/mike/miserables/) that Mike Bostock made for Les Misérables. Most of the code for the graph came directly from this source, with tweaks for my use.
 
+**Note:** You can find the data I used for this and other projects, [here](/data).
+
 <div id="co-occurrence">
   <ul id="legend">
     <strong>Sort by</strong>

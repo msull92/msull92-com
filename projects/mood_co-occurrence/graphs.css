@@ -22,8 +22,8 @@ ul#legend {
   }
 }
 
-strong,
-select {
+#co-occurrence strong,
+#co-occurrence select {
   display: block;
 }
 

@@ -27,6 +27,7 @@ h5,
 h6 {
   font-family: $secondary-font-stack;
   font-weight: 500;
+  text-align: left;
 }
 
 img {
@@ -96,7 +97,8 @@ a:hover {
   line-height: 1.5em;
   margin: 25px 0;
 }
-.site .posts .post-listing .title { font-size: 1.4em; }
+.site .posts .post-listing .title { font-size: 1.4em; text-align: left !important; }
+.site .posts .post-listing a.title { display: inline-block; }
 .site .posts .published-on {
   color: #6F7783;
   font-weight: normal;

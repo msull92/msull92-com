@@ -74,7 +74,7 @@ function order(value) {
 }
 
 function render() {
-  d3.json("http://apps.msull92.com/data/mood-matrix-generator/co-occurrence-map.json", function(data) {
+  d3.json("http://apps.msull92.com/data/mood-matrix/co-occurrence-map.json", function(data) {
     matrix = [],
     nodes = data.nodes,
     n = nodes.length;

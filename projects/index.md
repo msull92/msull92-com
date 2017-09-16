@@ -10,10 +10,13 @@ This is a collection of various projects that I'm working on or have done in the
 
 <ul class='projects'>
   <li class='project-listing'>
-    <a class='title' href='financial_map'>Financial Map</a> - This is an analytical representation of my finances.
+    <a class='title' href='financial_map'>Financial Map</a> - A representation of my finances.
   </li>
   <li class='project-listing'>
-    <a class='title' href='mood_co-occurrence'>Mood Co-occurrence</a> - This is an analytical representation of my mood over time, updated on a daily basis.
+    <a class='title' href='mood_co-occurrence'>Mood Co-occurrence</a> - A representation of my moods co-occurring with other moods.
+  </li>
+  <li class='project-listing'>
+    <a class='title' href='mood_meter'>Mood Meter</a> - An analytical representation of my mood over time.
   </li>
 </ul>
 
@@ -36,6 +39,15 @@ This is a collection of various projects that I'm working on or have done in the
     <a class='title' href='https://github.com/msull92/mood-matrix-generator'>mood-matrix-generator</a> - Script that generates JSON from a collection of responses saved by <code>mood-mailer</code> for a mood co-occurrence graph, seen <a href="/projects/mood_co-occurrence/">here</a>.
   </li>
   <li class='project-listing'>
+    <a class='title' href='https://github.com/msull92/mood-presenter'>mood-presenter</a> - NGINX application that connects to a database of mood responses from oaded by <code>mood-receiver</code> and presents it as a simple API.
+  </li>
+  <li class='project-listing'>
+    <a class='title' href='https://github.com/msull92/mood-receiver'>mood-receiver</a> - Simple server for receiving text responses from Twilio via <code>mood-texter</code>.
+  </li>
+  <li class='project-listing'>
+    <a class='title' href='https://github.com/msull92/mood-texter'>mood-texter</a> - Script that texts me throughout the work day to ask about my mood, then stores my responses. The results are used by <code>mood-matrix-generator</code> for <a href="/projects/mood_co-occurrence/">this project</a>.
+  </li>
+  <li class='project-listing'>
     <a class='title' href='https://github.com/msull92/msull92-com'>msull92-com</a> - A <a href="https://jekyllrb.com/">jekyll</a> project that generates the source code for <code>msull92.com</code>.
   </li>
   <li class='project-listing'>
@@ -43,6 +55,9 @@ This is a collection of various projects that I'm working on or have done in the
   </li>
   <li class='project-listing'>
     <a class='title' href='https://github.com/msull92/pandora-database-presenter'>pandora-database-presenter</a> - NGINX application that connects to a database of music data loaded by <code>pandora-database-loader</code> and presents it as a simple API.
+  </li>
+  <li class='project-listing'>
+    <a class='title' href='https://github.com/msull92/portfolio-manager'>portfolio-manager</a> - Script that uses the <a href="https://github.com/sanko/Robinhood">Robinhood API</a> to programmatically manage my stock portfolio.
   </li>
   <li class='project-listing'>
     <a class='title' href='https://github.com/msull92/rss-to-instapaper-loader'>rss-to-instapaper-loader</a> - Script for watching RSS feeds and adding them to my Instapaper account.

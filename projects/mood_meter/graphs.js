@@ -1,6 +1,6 @@
 var svg, focus, data, x, y, xAxis, yAxis, dim, chartWrapper, line, path, margin = {}, width, height;
 
-d3.json("http://apps.msull92.com/data/mood/sentiment-by-hour", function(data) {
+d3.json("https://apps.msull92.com/data/mood/sentiment-by-hour", function(data) {
   data.forEach(function(d) {
     d.hour = parseInt(moment.tz({ hour: d.hour }, "UTC").tz('America/Chicago').format('H'), 10);
   });

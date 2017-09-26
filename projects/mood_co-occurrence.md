@@ -6,8 +6,8 @@ description: This is an analytical representation of my mood over time, updated 
 
 This is an analytical representation of my mood over time, updated on an hourly basis.
 I created a [service](https://github.com/msull92/mood-mailer) that emails me throughout the work day to ask how I'm feeling.
-I respond with a one word answer and it records it [here](http://apps.msull92.com/data/mood/responses).
-Every hour, another [script](https://github.com/msull92/mood-matrix-generator) runs against that data and spits out a [co-occurrence map](http://apps.msull92.com/data/mood-matrix/co-occurrence-map.json) that groups words together using [natural language processing](https://cloud.google.com/natural-language/).
+I respond with a one word answer and it records it [here](https://apps.msull92.com/data/mood/responses).
+Every hour, another [script](https://github.com/msull92/mood-matrix-generator) runs against that data and spits out a [co-occurrence map](https://apps.msull92.com/data/mood-matrix/co-occurrence-map.json) that groups words together using [natural language processing](https://cloud.google.com/natural-language/).
 Co-occurrence is determined by which words are responded with one the same day.
 
 I was inspired by a [co-occurrence graph](https://bost.ocks.org/mike/miserables/) that Mike Bostock made for Les Misérables. Most of the code for the graph came directly from this source, with tweaks for my use.
@@ -36,5 +36,5 @@ I was inspired by a [co-occurrence graph](https://bost.ocks.org/mike/miserables/
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="graphs.js"></script>

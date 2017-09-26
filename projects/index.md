@@ -69,6 +69,6 @@ This is a collection of various projects that I'm working on or have done in the
     <a class='title' href='https://github.com/msull92/selfie-texter'>selfie-texter</a> - A script that texts me to ask for a selfie via <a href="">Twilio</a>.
   </li>
   <li class='project-listing'>
-    <a class='title' href='https://github.com/msull92/terraform-provider-deis'>terraform-provider-deis</a> - A provider plugin for <a href="https://www.terraform.io/">Terraform</a> that allows you to create and manage applications that are hosted on the self-hosted <a href="http://deis.io/">Deis</a> platform.
+    <a class='title' href='https://github.com/msull92/terraform-provider-deis'>terraform-provider-deis</a> - A provider plugin for <a href="https://www.terraform.io/">Terraform</a> that allows you to create and manage applications that are hosted on the self-hosted <a href="https://deis.io/">Deis</a> platform.
   </li>
 </ul>

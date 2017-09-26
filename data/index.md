@@ -11,12 +11,12 @@ I advise downloading and storing these data sets on your own servers rather than
 
 <ul class='data-sets'>
   <li class='data-set-listing'>
-    <a class='title' href='http://apps.msull92.com/data/mood/responses'>Mood Responses</a> - This is a collection of responses from <a href="https://github.com/msull92/mood-texter">mood-texter</a> which texts me throughout the work day to ask how I'm feeling. This is the base data I use to generate the "Mood Matrix by Day" data set.
+    <a class='title' href='https://apps.msull92.com/data/mood/responses'>Mood Responses</a> - This is a collection of responses from <a href="https://github.com/msull92/mood-texter">mood-texter</a> which texts me throughout the work day to ask how I'm feeling. This is the base data I use to generate the "Mood Matrix by Day" data set.
   </li>
   <li class='data-set-listing'>
-    <a class='title' href='http://apps.msull92.com/data/mood/sentiment-by-hour'>Mood Sentiment by Hour</a> - This is an aggregated version of <code>Mood Responses</code> for <a class='title' href='/projects/mood_meter'>this project</a>.
+    <a class='title' href='https://apps.msull92.com/data/mood/sentiment-by-hour'>Mood Sentiment by Hour</a> - This is an aggregated version of <code>Mood Responses</code> for <a class='title' href='/projects/mood_meter'>this project</a>.
   </li>
   <li class='data-set-listing'>
-    <a class='title' href='http://apps.msull92.com/data/mood-matrix/co-occurrence-map.json'>Mood Matrix by Day</a> - This is a collection of data points about my mood in matrix form. The relationships represented in the matrix show how two moods co-occur on the same day. Read more <a href="/projects/mood_co-occurrence">here</a>.
+    <a class='title' href='https://apps.msull92.com/data/mood-matrix/co-occurrence-map.json'>Mood Matrix by Day</a> - This is a collection of data points about my mood in matrix form. The relationships represented in the matrix show how two moods co-occur on the same day. Read more <a href="/projects/mood_co-occurrence">here</a>.
   </li>
 </ul>

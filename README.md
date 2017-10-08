@@ -18,3 +18,4 @@ $ rm -rf about slides _posts/*.md CNAME resume.html
 
 There are two rake tasks - `rake post` and `rake page` which prompt for
 metadata and generate the markdown files.
+ 

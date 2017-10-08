@@ -12,6 +12,7 @@ Finally I process the responses using [natural language processing](https://clou
 **Note:** You can find the data I used for this and other projects, [here](/data).
 
 <div id="mood-meter">
+  <h2>By Hour</h2>
   <ul id="legend">
     <strong>Sentiment</strong>
     <li class="positive"><span> </span> positive</li>
@@ -19,7 +20,19 @@ Finally I process the responses using [natural language processing](https://clou
     <li class="negative"><span> </span> negative</li>
   </ul>
 
-  <div id="graphs"></div>
+  <div id="hour-graph"></div>
+</div>
+
+<div id="mood-meter">
+  <h2>By Day of Week</h2>
+  <ul id="legend">
+    <strong>Sentiment</strong>
+    <li class="positive"><span> </span> positive</li>
+    <li class="neutral"><span> </span> neutral</li>
+    <li class="negative"><span> </span> negative</li>
+  </ul>
+
+  <div id="day-graph"></div>
 </div>
 
 <link rel="stylesheet" type="text/css" href="graphs.css">

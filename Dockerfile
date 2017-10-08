@@ -11,3 +11,5 @@ ADD . /tmp/jekyll-site
 
 RUN bundle exec jekyll build
 RUN cp -r /tmp/jekyll-site/_site/* /usr/share/nginx/html
+
+COPY nginx.conf /etc/nginx/nginx.conf

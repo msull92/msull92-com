@@ -18,6 +18,9 @@ This is a collection of various projects that I'm working on or have done in the
   <li class='project-listing'>
     <a class='title' href='mood_meter'>Mood Meter</a> - An analytical representation of my mood over time.
   </li>
+  <li class='project-listing'>
+    <a class='title' href='https://apps.msull92.com/portfolio'>Portfolio Dashboard</a> - A real-time dashboard, written in VueJS, that displays information about my stock portfolio that is automatically managed by my <a class='title' href='https://github.com/msull92/portfolio-manager'>portfolio-manager</a>.
+  </li>
 </ul>
 
 ## Software

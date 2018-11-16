@@ -6,20 +6,6 @@ date:  2017-06-05
 
 This is a collection of various projects that I'm working on or have done in the past.
 
-## Data Visualization
-
-<ul class='projects'>
-  <li class='project-listing'>
-    <a class='title' href='financial_map'>Financial Map</a> - A representation of my finances.
-  </li>
-  <li class='project-listing'>
-    <a class='title' href='mood_co-occurrence'>Mood Co-occurrence</a> - A representation of my moods co-occurring with other moods.
-  </li>
-  <li class='project-listing'>
-    <a class='title' href='mood_meter'>Mood Meter</a> - An analytical representation of my mood over time.
-  </li>
-</ul>
-
 ## Software
 
 <ul class='projects'>
@@ -33,10 +19,10 @@ This is a collection of various projects that I'm working on or have done in the
     <a class='title' href='https://github.com/msull92/dotfiles'>dotfiles</a> - A collection of my dotfiles so I can easily set up a new computer the same as I usually have it.
   </li>
   <li class='project-listing'>
-    <a class='title' href='https://github.com/msull92/mood-mailer'>mood-mailer</a> - Script that emails me throughout the work day to ask about my mood, then stores my responses. The results are used by <code>mood-matrix-generator</code> for <a href="/projects/mood_co-occurrence/">this project</a>.
+    <a class='title' href='https://github.com/msull92/mood-mailer'>mood-mailer</a> - Script that emails me throughout the work day to ask about my mood, then stores my responses. The results are used by <code>mood-matrix-generator</code>.
   </li>
   <li class='project-listing'>
-    <a class='title' href='https://github.com/msull92/mood-matrix-generator'>mood-matrix-generator</a> - Script that generates JSON from a collection of responses saved by <code>mood-mailer</code> for a mood co-occurrence graph, seen <a href="/projects/mood_co-occurrence/">here</a>.
+    <a class='title' href='https://github.com/msull92/mood-matrix-generator'>mood-matrix-generator</a> - Script that generates JSON from a collection of responses saved by <code>mood-mailer</code> for a mood co-occurrence graph.
   </li>
   <li class='project-listing'>
     <a class='title' href='https://github.com/msull92/mood-presenter'>mood-presenter</a> - NGINX application that connects to a database of mood responses from oaded by <code>mood-receiver</code> and presents it as a simple API.
@@ -45,7 +31,7 @@ This is a collection of various projects that I'm working on or have done in the
     <a class='title' href='https://github.com/msull92/mood-receiver'>mood-receiver</a> - Simple server for receiving text responses from Twilio via <code>mood-texter</code>.
   </li>
   <li class='project-listing'>
-    <a class='title' href='https://github.com/msull92/mood-texter'>mood-texter</a> - Script that texts me throughout the work day to ask about my mood, then stores my responses. The results are used by <code>mood-matrix-generator</code> for <a href="/projects/mood_co-occurrence/">this project</a>.
+    <a class='title' href='https://github.com/msull92/mood-texter'>mood-texter</a> - Script that texts me throughout the work day to ask about my mood, then stores my responses.
   </li>
   <li class='project-listing'>
     <a class='title' href='https://github.com/msull92/msull92-com'>msull92-com</a> - A <a href="https://jekyllrb.com/">jekyll</a> project that generates the source code for <code>msull92.com</code>.

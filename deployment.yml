@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: msull92-com
-        image: msull92/msull92-com
+        image: msull92/msull92-com:latest
         ports:
         - containerPort: 80
 ---

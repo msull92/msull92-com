@@ -1,9 +1,0 @@
-_site
-.sass-cache
-.DS_Store
-.jekyll-metadata
-notes.txt
-target/
-**/*.rs.bk
-Cargo.lock
-npm-debug.log
